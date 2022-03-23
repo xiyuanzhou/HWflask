@@ -9,12 +9,12 @@ def loop_list(mylist):
 
 myObject = Flask(__name__)
 
-name = "Lisa"
+#name = "Lisa"
 city_names = ['Paris', 'London', 'Rome', 'Tahiti']
 
 @myObject.route('/')
 def home():
-    #name = "Lisa"
+    name = "Lisa"
     #city_names = ['Paris', 'London', 'Rome', 'Tahiti']
 
     return """
