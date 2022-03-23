@@ -9,11 +9,13 @@ def loop_list(mylist):
 
 myObject = Flask(__name__)
 
+name = "Lisa"
+city_names = ['Paris', 'London', 'Rome', 'Tahiti']
 
 @myObject.route('/')
 def home():
-    name = "Lisa"
-    city_names = ['Paris', 'London', 'Rome', 'Tahiti']
+    #name = "Lisa"
+    #city_names = ['Paris', 'London', 'Rome', 'Tahiti']
 
     return """
     <html>
@@ -24,7 +26,7 @@ def home():
         <h1>
             Welcome """ + name + """
         </h1>
-        <a href="https://www.google.com/">not google</a>
+        <a href="www.google.com/">not google</a>
         """+loop_list(city_names)+"""
     </body>
     </html>
