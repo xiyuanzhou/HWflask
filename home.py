@@ -20,12 +20,13 @@ def home():
     return """
     <html>
     <head>
-        <h1>
-            Welcome """ + name + """
-        </h1>
+        <title>Title</title>
     </head>
     <body>
-        <a href="www.google.com/">not google</a>
+        <h1>
+            Welcome """ + name + """!
+        </h1>
+        <a href="https://www.google.com/">not google</a>
         """+loop_list(city_names)+"""
     </body>
     </html>
