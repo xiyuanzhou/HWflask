@@ -24,7 +24,7 @@ def home():
     </head>
     <body>
         <h1>
-            Welcome """ + name + """!
+            Welcome""" + name + """!
         </h1>
         <a href="https://www.google.com/">not google</a>
         """+loop_list(city_names)+"""
